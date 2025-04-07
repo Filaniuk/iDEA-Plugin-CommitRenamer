@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>mfilaniu</id>
+    <name>Rename Last Commit</name>
+    <version>1.0</version>
+    <vendor email="mikalai.filaniuk@gmail.com">Mikalai Filaniuk</vendor>
+
+    <description>
+        <![CDATA[
+        A simple automation plugin to rename the last Git commit using:<br/>
+        <code>git commit --amend -m "new message"</code>
+        ]]>
+    </description>
+
+    <depends>Git4Idea</depends>
+
+    <actions>
+        <action id="RenameCommitAction"
+                class="mfilaniu.CommitRenamer"
+                text="Rename Last Commit"
+                description="Renames the last Git commit">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

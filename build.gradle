@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.17.3'
+}
+
+group 'mfilaniu'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+intellij {
+    version = '2023.3'
+    type = 'IC'
+    plugins = ['Git4Idea']
+}
+
+patchPluginXml {
+    sinceBuild = '233'
+    untilBuild = '241.*'
+}
