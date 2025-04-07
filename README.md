@@ -14,5 +14,6 @@ Based on `git commit --amend -m "new message"`
  ```bash
  ./gradlew clean build runIde
 ```
+3.1 Open you project in a sandbox where Git has been connected.
 4. Top menu -> Tools -> Rename Last Commit (works only if at least one commit already exists).
 5. Enter new commit message.
